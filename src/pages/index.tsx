@@ -1,20 +1,22 @@
-import HeroSection from "@/components/sections/HeroSection";
+import TopSection from "@/components/sections/TopSection";
 import React from "react";
 
 export default function Home() {
   return (
     <>
-      <div className="min-h-screen bg-green-400">
-        <HeroSection
+      <div className="flex h-fit flex-col gap-16">
+        <TopSection
+          className={"m-auto"}
           rightSide={() => {
-            return <div className="h-[200px] w-full bg-orange-400"></div>;
+            return <div className="bg-expressive-blue h-[200px] w-full"></div>;
           }}
           leftSide={() => {
-            return <div className="h-[200px] w-full bg-orange-400"></div>;
+            return (
+              <div className="bg-secondary-background h-[200px] w-full"></div>
+            );
           }}
         />
       </div>
-      <div className="min-h-screen bg-blue-400"></div>
     </>
   );
 }
