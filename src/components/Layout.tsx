@@ -7,9 +7,10 @@ interface LayoutProps {
 const Layout: FC<LayoutProps> = ({ children }: LayoutProps) => {
   return (
     <div className={`flex h-screen flex-col overflow-hidden`}>
-      <header className="w-full border-b border-orange-400 p-4 text-center"></header>
-      <main className="flex-1 items-center overflow-y-scroll">{children}</main>
-      <footer className="w-full border-t border-orange-400 p-4 text-center"></footer>
+      <header className="w-full p-4 text-center">header</header>
+      <main className="bg-primary-background flex-1 items-center overflow-y-scroll py-4">
+        {children}
+      </main>
     </div>
   );
 };
