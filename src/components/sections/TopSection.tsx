@@ -6,7 +6,7 @@ interface HeroSectionProps {
   className?: string;
 }
 
-const HeroSection: FC<HeroSectionProps> = ({
+const TopSection: FC<HeroSectionProps> = ({
   rightSide,
   leftSide,
   className = "",
@@ -23,4 +23,4 @@ const HeroSection: FC<HeroSectionProps> = ({
   );
 };
 
-export default HeroSection;
+export default TopSection;
