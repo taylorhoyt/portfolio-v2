@@ -1,26 +1,68 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --site-color-primary-background: #FBFCFC;
+  --site-color-secondary-background: #F2F4F4;
+  --site-color-primary-text: #333333;
+  --site-color-secondary-text: #6B7280;
+
+  --site-color-primary: #1A5276;
+  --site-color-secondary: #5D6D7E;
+  --site-color-accent: #85C1E9;
+
+  --site-color-expressive-blue: #00BFFF;
+  --site-color-expressive-amethyst: #8A2BE2;
+  --site-color-expressive-red: #E74C3C;
+}
+
+.dark {
+  --site-color-primary-background: #1E272E;
+  --site-color-secondary-background: #2C3A47;
+  --site-color-primary-text: #ECF0F1;
+  --site-color-secondary-text: #BDC3C7;
+
+  --site-color-primary: #85C1E9;
+  --site-color-secondary: #6B7280;
+  --site-color-accent: #3498DB;
+
+  --site-color-expressive-blue: #00BFFF;
+  --site-color-expressive-amethyst: #8A2BE2;
+  --site-color-expressive-red: #E74C3C;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  /* Backgrounds */
+  --color-primary-background: var(--site-color-primary-background);
+  --color-secondary-background: var(--site-color-secondary-background);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+  /* Text Colors */
+  --color-primary-text: var(--site-color-primary-text);
+  --colort-secondary-tex: var(--site-color-secondary-text);
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* Core Palette */
+  --color-primary: var(--site-color-primary);
+  --color-secondary: var(--site-color-secondary);
+  --color-accent: var(--site-color-accent);
+
+  /* Expressive Accents */
+  --color-expressive-blue: var(--site-color-expressive-blue);
+  --color-expressive-amethyst: var(--site-color-expressive-amethyst);
+  --color-expressive-red: var(--site-color-expressive-red);
+
+  /* A-la Cart Palette */
+  --color-dark-gray: #333333;
+  --color-cadet-gray: #5D6D7E;
+  --color-deep-teal: #1a5276;
+  --color-sky-blue: #85C1E9;
+  --color-deep-sky-blue: #00BFFF;
+  --color-bright-gold: #FFD700;
+  --color-vivid-coral: #E74C3C;
+  --color-off-white: #FBFCFC;
+
+  --color-amethyst: #8A2BE2;
+
+  --color-deep-charcoal: #1E272E;
+  --color-dark-slate-blue: #2C3A47;
+  --color-light-gray: #ECF0F1;
+  --color-silver-gray: #BDC3C7;
 }
