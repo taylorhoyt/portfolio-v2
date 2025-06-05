@@ -21,7 +21,7 @@ const Button: React.FC<ButtonProps> = ({
       type={type}
       onClick={onClick}
       disabled={disabled}
-      className={`flex items-center gap-2 rounded-full p-4 transition-colors duration-300 ${className}`}
+      className={`flex items-center gap-2 rounded-full p-4 transition-colors duration-300 hover:brightness-50 ${className}`}
       {...props}
     >
       {children}

@@ -32,7 +32,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
         <div className="flex gap-4">
           {projectUrl && (
             <Link href={projectUrl} target="_blank" rel="noopener noreferrer">
-              <BasicButton className="bg-expressive-amethyst hover:bg-expressive-blue text-white">
+              <BasicButton className="bg-expressive-amethyst text-white">
                 <ExternalLink size={24} />
                 Info
               </BasicButton>
@@ -40,7 +40,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
           )}
           {githubUrl && (
             <Link href={githubUrl} target="_blank" rel="noopener noreferrer">
-              <BasicButton className="bg-dark-slate-blue hover:bg-deep-charcoal text-white">
+              <BasicButton className="bg-dark-slate-blue text-white">
                 <Github size={24} />
               </BasicButton>
             </Link>
