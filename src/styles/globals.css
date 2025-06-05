@@ -71,3 +71,25 @@
   --color-light-gray: #ECF0F1;
   --color-silver-gray: #BDC3C7;
 }
+
+@layer base {
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--site-color-primary-background);
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--site-color-primary);
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--site-color-secondary);
+  }
+}
