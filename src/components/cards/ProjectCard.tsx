@@ -1,6 +1,8 @@
 import React, { FC } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { ExternalLink, Github } from "lucide-react";
+import BasicButton from "../buttons/BasicButton";
 
 interface ProjectCardProps {
   title: string;
@@ -18,7 +20,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
   githubUrl,
 }: ProjectCardProps) => {
   return (
-    <div className="overflow-hidden rounded-lg shadow-lg transition-shadow duration-300 hover:scale-[102%] hover:shadow-xl">
+    <div className="h-fit w-full min-w-fit overflow-hidden rounded-lg shadow-lg transition-shadow duration-300 hover:scale-[102%] hover:shadow-xl">
       <div className="relative aspect-video w-full">
         <Image src={imageUrl} alt={title} fill className="object-cover" />
       </div>
@@ -29,23 +31,18 @@ const ProjectCard: FC<ProjectCardProps> = ({
 
         <div className="flex gap-4">
           {projectUrl && (
-            <Link
-              href={projectUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded bg-blue-600 px-4 py-2 text-white transition-colors duration-300 hover:bg-blue-700"
-            >
-              View Project
+            <Link href={projectUrl} target="_blank" rel="noopener noreferrer">
+              <BasicButton className="bg-expressive-amethyst hover:bg-expressive-blue text-white">
+                <ExternalLink size={24} />
+                Info
+              </BasicButton>
             </Link>
           )}
           {githubUrl && (
-            <Link
-              href={githubUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded bg-gray-800 px-4 py-2 text-white transition-colors duration-300 hover:bg-gray-900"
-            >
-              GitHub
+            <Link href={githubUrl} target="_blank" rel="noopener noreferrer">
+              <BasicButton className="bg-dark-slate-blue hover:bg-deep-charcoal text-white">
+                <Github size={24} />
+              </BasicButton>
             </Link>
           )}
         </div>
