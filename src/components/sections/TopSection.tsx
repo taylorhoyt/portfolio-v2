@@ -18,22 +18,25 @@ const TopSection: FC<HeroSectionProps> = ({
       <div
         className={`grid h-fit w-[1200px] max-w-[75vw] grid-cols-1 gap-4 lg:grid-cols-5 ${className}`}
       >
-        <div className="bg-primary h-fit rounded-xl lg:col-span-3">
+        <div className="bg-primary flex h-full w-full flex-col rounded-xl lg:col-span-3">
           <div
             className={
-              "from-electric-blue to-expressive-amethyst h-fit rounded-xl bg-linear-to-tl shadow-xl lg:col-span-3"
+              "from-electric-blue to-expressive-amethyst h-full content-center rounded-xl bg-linear-to-t shadow-xl lg:bg-linear-to-b"
             }
           >
             {rightSide()}
           </div>
-          {buttonRow()}
+          <div className="hidden gap-2 p-4 lg:flex">{buttonRow()}</div>
         </div>
-        <div
-          className={
-            "from-electric-blue to-expressive-amethyst mx-auto h-fit w-fit rounded-xl bg-linear-to-tr lg:col-span-2 lg:row-span-2"
-          }
-        >
-          {leftSide()}
+        <div className="bg-primary flex h-full w-full flex-row rounded-xl lg:col-span-2 lg:w-fit">
+          <div className="flex flex-col gap-2 p-4 lg:hidden">{buttonRow()}</div>
+          <div
+            className={
+              "from-electric-blue to-expressive-amethyst h-full w-full rounded-xl bg-linear-to-b lg:mx-auto lg:bg-linear-to-b"
+            }
+          >
+            {leftSide()}
+          </div>
         </div>
       </div>
     </section>

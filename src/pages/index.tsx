@@ -35,8 +35,8 @@ export default function Home() {
               <div className="m-auto h-fit w-fit text-center">
                 <Image
                   src="/landing-images/alien.png"
-                  width={500}
-                  height={500}
+                  width={932}
+                  height={932}
                   className="rounded-full p-6"
                   alt="distinctly not me"
                 />
@@ -45,12 +45,15 @@ export default function Home() {
           }}
           buttonRow={() => {
             return (
-              <div className="flex gap-2 p-4">
+              <>
                 <BasicButton className="bg-expressive-red h-[35px] w-[35px]"></BasicButton>
-                <BasicButton className="bg-bright-gold h-[35px] w-[35px]"></BasicButton>
+                <BasicButton
+                  className="bg-bright-gold h-[35px] w-[35px]"
+                  tooltipLabel="balls"
+                ></BasicButton>
                 <BasicButton className="bg-expressive-blue h-[35px] w-[35px]"></BasicButton>
                 <BasicButton className="bg-expressive-amethyst h-[35px] w-[35px]"></BasicButton>
-              </div>
+              </>
             );
           }}
         />
