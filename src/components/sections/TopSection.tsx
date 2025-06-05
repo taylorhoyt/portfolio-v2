@@ -3,12 +3,14 @@ import React, { FC } from "react";
 interface HeroSectionProps {
   rightSide: () => React.ReactNode;
   leftSide: () => React.ReactNode;
+  buttonRow: () => React.ReactNode;
   className?: string;
 }
 
 const TopSection: FC<HeroSectionProps> = ({
   rightSide,
   leftSide,
+  buttonRow,
   className = "",
 }: HeroSectionProps) => {
   return (
@@ -24,12 +26,7 @@ const TopSection: FC<HeroSectionProps> = ({
           >
             {rightSide()}
           </div>
-          <div className="flex gap-2 p-4">
-            <div className="bg-expressive-red h-[35px] w-[35px] rounded-full"></div>
-            <div className="bg-bright-gold h-[35px] w-[35px] rounded-full"></div>
-            <div className="bg-expressive-blue h-[35px] w-[35px] rounded-full"></div>
-            <div className="bg-expressive-amethyst h-[35px] w-[35px] rounded-full"></div>
-          </div>
+          {buttonRow()}
         </div>
         <div
           className={

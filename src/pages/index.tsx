@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import ProjectSection from "@/components/sections/ProjectSection";
 import ProjectCard from "@/components/cards/ProjectCard";
+import BasicButton from "@/components/buttons/BasicButton";
 
 export default function Home() {
   return (
@@ -42,12 +43,24 @@ export default function Home() {
               </div>
             );
           }}
+          buttonRow={() => {
+            return (
+              <div className="flex gap-2 p-4">
+                <BasicButton className="bg-expressive-red h-[35px] w-[35px]"></BasicButton>
+                <BasicButton className="bg-bright-gold h-[35px] w-[35px]"></BasicButton>
+                <BasicButton className="bg-expressive-blue h-[35px] w-[35px]"></BasicButton>
+                <BasicButton className="bg-expressive-amethyst h-[35px] w-[35px]"></BasicButton>
+              </div>
+            );
+          }}
         />
         <ProjectSection>
           <ProjectCard
             title={"Project"}
             description={"This is a project card"}
             imageUrl={"/project-images/stig.jpg"}
+            projectUrl={"mcms.taylorhoyt.com"}
+            githubUrl={"https://github.com/taylorhoyt"}
           />
           <ProjectCard
             title={"Project"}
