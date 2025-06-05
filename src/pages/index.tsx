@@ -49,7 +49,7 @@ export default function Home() {
                 <BasicButton className="bg-expressive-red h-[35px] w-[35px]"></BasicButton>
                 <BasicButton
                   className="bg-bright-gold h-[35px] w-[35px]"
-                  tooltipLabel="balls"
+                  tooltipLabel="label"
                 ></BasicButton>
                 <BasicButton className="bg-expressive-blue h-[35px] w-[35px]"></BasicButton>
                 <BasicButton className="bg-expressive-amethyst h-[35px] w-[35px]"></BasicButton>

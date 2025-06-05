@@ -19,7 +19,7 @@ const Button: React.FC<ButtonProps> = ({
   ...props
 }) => {
   return (
-    <div className="relative group">
+    <div className="group relative">
       <button
         type={type}
         onClick={onClick}
@@ -30,7 +30,7 @@ const Button: React.FC<ButtonProps> = ({
         {children}
       </button>
       {tooltipLabel && (
-        <div className="absolute left-1/2 -translate-x-1/2 top-full mt-2 px-2 py-1 bg-black text-white text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap z-50">
+        <div className="bg-secondary-background text-primary-text pointer-events-none absolute top-full left-1/2 z-50 mt-2 -translate-x-1/2 rounded px-2 py-1 text-sm whitespace-nowrap opacity-0 shadow-lg transition-opacity duration-200 group-hover:opacity-100">
           {tooltipLabel}
         </div>
       )}
