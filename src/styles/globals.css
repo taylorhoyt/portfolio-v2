@@ -85,7 +85,7 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background: var(--site-color-primary);
+    background: var(--site-color-secondary-background);
     border-radius: 5px;
   }
 
