@@ -1,6 +1,8 @@
 import TopSection from "@/components/sections/TopSection";
 import Image from "next/image";
 import React from "react";
+import ProjectSection from "@/components/sections/ProjectSection";
+import ProjectCard from "@/components/cards/ProjectCard";
 
 export default function Home() {
   return (
@@ -14,7 +16,7 @@ export default function Home() {
                 <h1 className="text-off-white text-3xl font-bold">
                   Many things will be built
                 </h1>
-                <h1 className="text-expressive-blue pb-2 text-4xl font-bold underline underline-offset-4">
+                <h1 className="text-expressive-blue text-4xl font-bold">
                   in a real timeframe
                 </h1>
                 <h1 className="text-off-white text-3xl font-bold">
@@ -29,7 +31,7 @@ export default function Home() {
           }}
           leftSide={() => {
             return (
-              <div className="m-auto h-fit w-fit">
+              <div className="m-auto h-fit w-fit text-center">
                 <Image
                   src="/landing-images/alien.png"
                   width={500}
@@ -41,6 +43,23 @@ export default function Home() {
             );
           }}
         />
+        <ProjectSection>
+          <ProjectCard
+            title={"Project"}
+            description={"This is a project card"}
+            imageUrl={"/project-images/stig.jpg"}
+          />
+          <ProjectCard
+            title={"Project"}
+            description={"This is a project card"}
+            imageUrl={"/project-images/stig.jpg"}
+          />
+          <ProjectCard
+            title={"Project"}
+            description={"This is a project card"}
+            imageUrl={"/project-images/stig.jpg"}
+          />
+        </ProjectSection>
       </div>
     </>
   );
