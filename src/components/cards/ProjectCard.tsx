@@ -20,14 +20,14 @@ const ProjectCard: FC<ProjectCardProps> = ({
   githubUrl,
 }: ProjectCardProps) => {
   return (
-    <div className="h-fit w-full min-w-fit overflow-hidden rounded-lg shadow-lg transition-shadow duration-300 hover:scale-[102%] hover:shadow-xl">
+    <div className="h-fit w-full min-w-fit overflow-hidden rounded-lg transition-shadow duration-300 hover:scale-[102%] hover:shadow-xl">
       <div className="relative aspect-video w-full">
         <Image src={imageUrl} alt={title} fill className="object-cover" />
       </div>
 
-      <div className="from-electric-blue to-expressive-amethyst bg-linear-to-t p-6">
-        <h3 className="mb-2 text-2xl font-bold">{title}</h3>
-        <p className="mb-4 text-gray-700">{description}</p>
+      <div className="from-from-gradient to-to-gradient via-via-gradient bg-linear-to-t p-6">
+        <h3 className="text-off-white mb-2 text-2xl font-bold">{title}</h3>
+        <p className="text-silver-gray mb-4">{description}</p>
 
         <div className="flex gap-4">
           {projectUrl && (
