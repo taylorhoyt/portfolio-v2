@@ -11,7 +11,7 @@ const HeaderSection: FC<HeaderSectionProps> = ({
 }: HeaderSectionProps) => {
   return (
     <header
-      className={`bg-secondary-background text-primary-text flex w-full justify-between px-8 py-4 ${className}`}
+      className={`bg-secondary-background text-primary-text flex w-full justify-between px-8 py-1 shadow-xl ${className}`}
     >
       {children}
     </header>
