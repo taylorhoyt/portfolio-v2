@@ -32,7 +32,7 @@ const TopSection: FC<HeroSectionProps> = ({
           <div className="flex flex-col gap-2 p-4 lg:hidden">{buttonRow()}</div>
           <div
             className={
-              "from-from-gradient to-to-gradient via-via-gradient h-full w-full rounded-xl bg-linear-to-b shadow-[-10px_0px_15px_-3px_rgba(0,0,0,0.3)] lg:mx-auto lg:bg-linear-to-b lg:shadow-none"
+              "from-from-gradient to-to-gradient via-via-gradient flex h-full w-full rounded-xl bg-linear-to-b shadow-[-10px_0px_15px_-3px_rgba(0,0,0,0.3)] lg:mx-auto lg:bg-linear-to-b lg:shadow-none"
             }
           >
             {leftSide()}
