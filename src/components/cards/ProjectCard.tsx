@@ -47,7 +47,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
           )}
           {githubUrl && (
             <Link href={githubUrl} target="_blank" rel="noopener noreferrer">
-              <BasicButton className="bg-dark-slate-blue text-white">
+              <BasicButton className="bg-dark-slate-blue text-off-white">
                 <Github size={24} />
               </BasicButton>
             </Link>
