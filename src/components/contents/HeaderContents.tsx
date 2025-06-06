@@ -8,7 +8,7 @@ const HeaderContents = () => {
       <div className="flex gap-4">
         <MenuButton />
         <div className="my-auto flex h-fit">
-          <h1 className="text-bold text-primary-text text-2xl">Name</h1>
+          <h1 className="text-primary-text text-3xl font-bold">Taylor Hoyt</h1>
         </div>
       </div>
       <ThemeToggleButton />
