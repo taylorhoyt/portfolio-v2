@@ -2,7 +2,7 @@
 
 :root {
   --site-color-primary-background: #FBFCFC;
-  --site-color-secondary-background: #F2F4F4;
+  --site-color-secondary-background: #BDC3C7;
   --site-color-primary-text: #333333;
   --site-color-secondary-text: #6B7280;
 
@@ -13,6 +13,11 @@
   --site-color-expressive-blue: #00BFFF;
   --site-color-expressive-amethyst: #8A2BE2;
   --site-color-expressive-red: #E74C3C;
+  --site-color-expressive-yellow: #FFD700;
+
+  --site-color-from-gradient: #ADD8E6;
+  --site-color-via-gradient: #9370DB;
+  --site-color-to-gradient: #DA70D6;
 }
 
 .dark {
@@ -28,6 +33,11 @@
   --site-color-expressive-blue: #00BFFF;
   --site-color-expressive-amethyst: #8A2BE2;
   --site-color-expressive-red: #E74C3C;
+  --site-color-expressive-yellow: #FFD700;
+
+  --site-color-from-gradient: #00A0FF;
+  --site-color-via-gradient: #615fff;
+  --site-color-to-gradient: #8A2BE2;
 }
 
 @theme inline {
@@ -37,7 +47,7 @@
 
   /* Text Colors */
   --color-primary-text: var(--site-color-primary-text);
-  --colort-secondary-tex: var(--site-color-secondary-text);
+  --color-secondary-text: var(--site-color-secondary-text);
 
   /* Core Palette */
   --color-primary: var(--site-color-primary);
@@ -48,6 +58,11 @@
   --color-expressive-blue: var(--site-color-expressive-blue);
   --color-expressive-amethyst: var(--site-color-expressive-amethyst);
   --color-expressive-red: var(--site-color-expressive-red);
+  --color-expressive-yellow: var(--site-color-expressive-yellow);
+
+  --color-from-gradient: var(--site-color-from-gradient);
+  --color-via-gradient: var(--site-color-via-gradient);
+  --color-to-gradient: var(--site-color-to-gradient);
 
   /* A-la Cart Palette */
   --color-dark-gray: #333333;
@@ -61,10 +76,15 @@
 
   --color-aqua: #00FFFF;
   --color-electric-blue: #00A0FF;
+  --color-goat-indigo: #615fff;
   --color-amethyst: #8A2BE2;
   --color-magenta: #FF00FF;
   --color-deep-pink: #FF1493;
   --color-orchid: #DA70D6;
+
+  --color-light-blue: #ADD8E6;
+  --color-medium-purple: #9370DB;
+  --color-light-orchid: #DA70D6;
 
   --color-deep-charcoal: #1E272E;
   --color-dark-slate-blue: #2C3A47;
