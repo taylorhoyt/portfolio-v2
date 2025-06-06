@@ -9,7 +9,7 @@ const ThemeToggleButton: React.FC = () => {
   return (
     <BasicButton
       onClick={toggleTheme}
-      className="bg-secondary-background text-primary-text"
+      className="text-primary-text bg-transparent"
       tooltipLabel={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
     >
       {theme === "light" ? <Moon size={28} /> : <Sun size={28} />}

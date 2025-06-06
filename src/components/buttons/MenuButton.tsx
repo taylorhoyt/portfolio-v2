@@ -8,7 +8,7 @@ const MenuButton: React.FC = () => {
   return (
     <BasicButton
       onClick={() => setIsOpen(!isOpen)}
-      className="bg-secondary-background text-primary-text"
+      className="text-primary-text bg-transparent"
       tooltipLabel={`${isOpen ? "Close menu" : "Open menu"}`}
     >
       {isOpen ? <X size={28} /> : <Menu size={28} />}
