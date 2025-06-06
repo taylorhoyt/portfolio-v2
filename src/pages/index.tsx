@@ -8,7 +8,7 @@ import BasicButton from "@/components/buttons/BasicButton";
 export default function Home() {
   return (
     <>
-      <div className="flex h-fit flex-col gap-16">
+      <div className="flex h-fit flex-col gap-4">
         <TopSection
           className={"m-auto"}
           rightSide={() => {
@@ -23,7 +23,7 @@ export default function Home() {
                 <h1 className="text-off-white text-3xl font-bold">
                   Maybe even soon
                 </h1>
-                <h3 className="text-silver-gray text-wrap">
+                <h3 className="text-light-gray text-wrap">
                   Fullstack software engineer experienced in turning dreams into
                   reality
                 </h3>
@@ -48,7 +48,7 @@ export default function Home() {
               <>
                 <BasicButton className="bg-expressive-red h-[35px] w-[35px]"></BasicButton>
                 <BasicButton
-                  className="bg-bright-gold h-[35px] w-[35px]"
+                  className="bg-expressive-yellow h-[35px] w-[35px]"
                   tooltipLabel="label"
                 ></BasicButton>
                 <BasicButton className="bg-expressive-blue h-[35px] w-[35px]"></BasicButton>
