@@ -1,8 +1,8 @@
 import React, { FC } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { ExternalLink, Github } from "lucide-react";
 import BasicButton from "../buttons/BasicButton";
+import LoadingImage from "../LoadingImage";
 
 interface ProjectCardProps {
   title: string;
@@ -21,8 +21,15 @@ const ProjectCard: FC<ProjectCardProps> = ({
 }: ProjectCardProps) => {
   return (
     <div className="h-fit w-full min-w-fit overflow-hidden rounded-lg transition-shadow duration-300 hover:scale-[102%] hover:shadow-xl">
-      <div className="relative aspect-video w-full">
-        <Image src={imageUrl} alt={title} fill className="object-cover" />
+      <div className="from-from-gradient to-to-gradient via-via-gradient relative aspect-video w-full bg-linear-to-b">
+        <div className="absolute inset-0">
+          <LoadingImage
+            src={imageUrl}
+            alt={title}
+            fill
+            className="object-cover"
+          />
+        </div>
       </div>
 
       <div className="from-from-gradient to-to-gradient via-via-gradient bg-linear-to-t p-6">

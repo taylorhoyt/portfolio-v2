@@ -1,9 +1,9 @@
 import TopSection from "@/components/sections/TopSection";
-import Image from "next/image";
 import React from "react";
 import ProjectSection from "@/components/sections/ProjectSection";
 import ProjectCard from "@/components/cards/ProjectCard";
 import BasicButton from "@/components/buttons/BasicButton";
+import LoadingImage from "@/components/LoadingImage";
 
 export default function Home() {
   return (
@@ -33,12 +33,12 @@ export default function Home() {
           leftSide={() => {
             return (
               <div className="m-auto h-fit w-fit text-center">
-                <Image
+                <LoadingImage
                   src="/landing-images/me.webp"
                   width={2585}
                   height={2585}
                   className="rounded-full p-6"
-                  alt="distinctly not me"
+                  alt="me"
                 />
               </div>
             );
