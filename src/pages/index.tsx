@@ -34,7 +34,7 @@ export default function Home() {
             return (
               <div className="m-auto h-fit w-fit text-center">
                 <Image
-                  src="/landing-images/me.jpg"
+                  src="/landing-images/me.webp"
                   width={2585}
                   height={2585}
                   className="rounded-full p-6"
@@ -61,19 +61,19 @@ export default function Home() {
           <ProjectCard
             title={"Project"}
             description={"This is a project card"}
-            imageUrl={"/project-images/lawnmower.jpg"}
+            imageUrl={"/project-images/lawnmower.webp"}
             projectUrl={"mcms.taylorhoyt.com"}
             githubUrl={"https://github.com/taylorhoyt"}
           />
           <ProjectCard
             title={"Project"}
             description={"This is a project card"}
-            imageUrl={"/project-images/lawnmower.jpg"}
+            imageUrl={"/project-images/lawnmower.webp"}
           />
           <ProjectCard
             title={"Project"}
             description={"This is a project card"}
-            imageUrl={"/project-images/lawnmower.jpg"}
+            imageUrl={"/project-images/lawnmower.webp"}
           />
         </ProjectSection>
       </div>
