@@ -10,7 +10,7 @@ const HeaderContents = () => {
         <MenuButton />
         <div className="my-auto flex h-fit">
           <Link href="/" rel="noopener noreferrer">
-            <h1 className="text-primary-text text-3xl font-bold">
+            <h1 className="text-primary-text text-3xl leading-none font-bold">
               Taylor Hoyt
             </h1>
           </Link>
