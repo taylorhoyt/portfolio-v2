@@ -9,7 +9,7 @@ interface SideMenuProps {
 
 const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
   const menuItems = [
-    { icon: <Home size={24} />, label: "Home", href: "/" },
+    { icon: <Home size={24} />, label: "Home", href: "/#home" },
     { icon: <User size={24} />, label: "About", href: "/about" },
     { icon: <Briefcase size={24} />, label: "Projects", href: "/#projects" },
     { icon: <FileText size={24} />, label: "Resume", href: "/resume" },
