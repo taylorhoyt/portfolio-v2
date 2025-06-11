@@ -48,7 +48,7 @@ export default function Home() {
           buttonRow={() => {
             return (
               <>
-                <Link href={""} target="_blank" rel="noopener noreferrer">
+                <Link href={"/resume"} target="" rel="noopener noreferrer">
                   <BasicButton
                     className="bg-expressive-red text-off-white"
                     tooltipLabel="View my resume"
