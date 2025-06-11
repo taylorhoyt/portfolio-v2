@@ -12,7 +12,7 @@ const Layout: FC<LayoutProps> = ({ children }: LayoutProps) => {
       <HeaderSection>
         <HeaderContents />
       </HeaderSection>
-      <main className="bg-primary-background flex-1 items-center overflow-y-scroll py-4">
+      <main className="bg-primary-background flex-1 items-center overflow-y-scroll">
         {children}
       </main>
     </div>
