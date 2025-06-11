@@ -30,7 +30,7 @@ const ResumeSection: FC<ResumeSectionProps> = ({
               Opening resume in a new tab...
             </p>
             <p className="text-secondary-text text-sm">
-              If it doesn't open automatically,{" "}
+              If it doesn&#39;t open automatically,{" "}
               <a
                 href="/resume/Resume-2025.pdf"
                 target="_blank"
