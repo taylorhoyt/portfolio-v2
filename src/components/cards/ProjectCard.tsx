@@ -32,9 +32,9 @@ const ProjectCard: FC<ProjectCardProps> = ({
         </div>
       </div>
 
-      <div className="from-from-gradient to-to-gradient via-via-gradient bg-linear-to-t p-6">
-        <h3 className="text-off-white mb-2 text-2xl font-bold">{title}</h3>
-        <p className="text-silver-gray mb-4">{description}</p>
+      <div className="bg-primary-background p-6">
+        <h3 className="text-primary-text mb-2 text-2xl font-bold">{title}</h3>
+        <p className="text-secondary-text mb-4">{description}</p>
 
         <div className="flex gap-4">
           {projectUrl && (
