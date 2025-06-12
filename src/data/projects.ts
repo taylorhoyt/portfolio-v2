@@ -17,7 +17,7 @@ export const projectConfigs: ProjectConfig[] = [
       "Delivered end-to-end front end for the Persona AI Portal using Next.js and Tailwind, handling complex UI logic\n" +
       "including persona selection, wallet authentication flow, AI integration, and dynamic chat interfaces",
     imagesFolder: "/project-images/portal",
-    imageFiles: ["chat.png", "edit-chat-history.png", "select-avatar.png"],
+    imageFiles: ["chat.webp", "edit-chat-history.webp", "select-avatar.webp"],
     buttons: [
       {
         type: "external",
@@ -34,7 +34,15 @@ export const projectConfigs: ProjectConfig[] = [
       "companion app to allow users to login and " +
       "securely access monitoring data.",
     imagesFolder: "/project-images/mcms",
-    imageFiles: ["1.png", "2.png", "3.png", "4.png", "5.png", "6.png", "7.png"],
+    imageFiles: [
+      "1.webp",
+      "2.webp",
+      "3.webp",
+      "4.webp",
+      "5.webp",
+      "6.webp",
+      "7.webp",
+    ],
     buttons: [
       {
         type: "external",
@@ -50,10 +58,10 @@ export const projectConfigs: ProjectConfig[] = [
     imagesFolder: "/project-images/splm",
     imageFiles: [
       "complete.webp",
-      "closeup.jpg",
-      "cloudy-charge.jpg",
-      "under-hood.jpg",
-      "building.png",
+      "closeup.webp",
+      "cloudy-charge.webp",
+      "under-hood.webp",
+      "building.webp",
     ],
     buttons: [
       {
