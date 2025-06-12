@@ -32,7 +32,7 @@ const ResumeSection: FC<ResumeSectionProps> = ({
             <p className="text-secondary-text text-sm">
               If it doesn&#39;t open automatically,{" "}
               <a
-                href="/resume/Resume-2025.pdf"
+                href="/resume/resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-500 hover:text-blue-600"

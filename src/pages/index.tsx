@@ -50,7 +50,7 @@ export default function Home() {
               return (
                 <>
                   <Link
-                    href={"/resume/Resume-2025.pdf"}
+                    href={"/resume/resume.pdf"}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
