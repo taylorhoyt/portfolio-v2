@@ -12,7 +12,11 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
     { icon: <Home size={24} />, label: "Home", href: "/#home" },
     { icon: <User size={24} />, label: "About", href: "/about" },
     { icon: <Briefcase size={24} />, label: "Projects", href: "/#projects" },
-    { icon: <FileText size={24} />, label: "Resume", href: "/resume" },
+    {
+      icon: <FileText size={24} />,
+      label: "Resume",
+      href: "/resume/Resume-2025.pdf",
+    },
   ];
 
   return (
@@ -30,6 +34,7 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
               <li key={item.label}>
                 <Link
                   href={item.href}
+                  target={item.label === "Resume" ? "_blank" : ""}
                   className="text-primary-text hover:bg-primary-background flex items-center gap-3 rounded-lg px-3 py-2 transition-colors duration-200"
                   onClick={() => {
                     onClose();
