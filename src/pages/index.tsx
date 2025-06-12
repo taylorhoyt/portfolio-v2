@@ -6,6 +6,7 @@ import ProjectCard from "@/components/cards/ProjectCard";
 import BasicButton from "@/components/buttons/BasicButton";
 import LoadingImage from "@/components/LoadingImage";
 import Link from "next/link";
+import { projectConfigs } from "@/data/projects";
 
 export default function Home() {
   return (
@@ -105,23 +106,9 @@ export default function Home() {
 
         <div className="min-h-body from-from-gradient to-to-gradient via-via-gradient flex h-fit w-full items-center justify-center bg-gradient-to-t py-4">
           <ProjectSection>
-            <ProjectCard
-              title={"Project"}
-              description={"This is a project card"}
-              imageUrl={"/project-images/lawnmower.webp"}
-              projectUrl={"https://mcms.taylorhoyt.com"}
-              githubUrl={"https://github.com/taylorhoyt"}
-            />
-            <ProjectCard
-              title={"Project"}
-              description={"This is a project card"}
-              imageUrl={"/project-images/lawnmower.webp"}
-            />
-            <ProjectCard
-              title={"Project"}
-              description={"This is a project card"}
-              imageUrl={"/project-images/lawnmower.webp"}
-            />
+            {projectConfigs.map((config, index) => (
+              <ProjectCard key={index} config={config} />
+            ))}
           </ProjectSection>
         </div>
       </div>
