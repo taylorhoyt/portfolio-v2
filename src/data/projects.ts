@@ -46,9 +46,21 @@ export const projectConfigs: ProjectConfig[] = [
   {
     title: "Solar-Powered Lawnmower",
     description:
-      "Collaborated with a team of four to design and build a solar-powered, emission-free lawn mower over the course of four months.",
-    imagesFolder: "/project-images",
-    imageFiles: ["lawnmower.webp"],
-    buttons: [],
+      "Collaborated with 3 colleagues to design and build a solar-powered, emission-free lawn mower over the course of four months.",
+    imagesFolder: "/project-images/splm",
+    imageFiles: [
+      "complete.webp",
+      "closeup.jpg",
+      "cloudy-charge.jpg",
+      "under-hood.jpg",
+      "building.png",
+    ],
+    buttons: [
+      {
+        type: "external",
+        label: "See images 11-19",
+        url: "https://empactsstudentprojects.wordpress.com/introduction-to-engineering/",
+      },
+    ],
   },
 ];
