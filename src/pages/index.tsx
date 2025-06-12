@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <div className="flex h-fit flex-col">
-        <div className="flex min-h-[90vh] w-full items-center justify-center">
+        <div className="min-h-body flex w-full items-center justify-center py-4">
           <TopSection
             className={"m-auto"}
             rightSide={() => {
@@ -99,7 +99,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="flex min-h-[90vh] w-full items-center justify-center">
+        <div className="min-h-body from-from-gradient to-to-gradient via-via-gradient flex h-fit w-full items-center justify-center bg-gradient-to-t py-4">
           <ProjectSection>
             <ProjectCard
               title={"Project"}

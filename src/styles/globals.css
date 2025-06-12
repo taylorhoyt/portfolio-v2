@@ -113,3 +113,7 @@
     background: var(--site-color-secondary);
   }
 }
+
+@utility min-h-body {
+  min-height: calc(100vh - 70px);
+}
