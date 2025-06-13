@@ -15,7 +15,7 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
     {
       icon: <FileText size={24} />,
       label: "Resume",
-      href: "/resume/Resume-2025.pdf",
+      href: "/resume/Resume.pdf",
     },
   ];
 
