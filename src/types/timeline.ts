@@ -1,9 +1,11 @@
-export interface Timeline {
+export interface TimelineEntries {
   timelineEntries: TimelineEntry[];
 }
 
 export interface TimelineEntry {
   id: string;
+  title: string;
+  subtitle?: string;
   startYear: number;
   endYear: number;
   startMonth?: string;
