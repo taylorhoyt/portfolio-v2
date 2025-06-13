@@ -17,13 +17,13 @@ const Timeline: FC<TimelineProps> = ({ timelineEntries }: TimelineProps) => {
   }, [timelineEntries]);
 
   return (
-    <div className="bg-primary-background flex min-h-screen justify-center py-10">
+    <div className="flex min-h-screen w-full justify-center py-10">
       <div
         ref={containerRef}
         className="relative flex w-full max-w-4xl flex-col items-center"
       >
         <div
-          className="bg-cadet-gray absolute top-0 left-1/2 z-0 -translate-x-1/2"
+          className="bg-off-white absolute top-0 left-1/2 z-0 -translate-x-1/2"
           style={{
             width: `4px`,
             height: containerHeight || "100%",

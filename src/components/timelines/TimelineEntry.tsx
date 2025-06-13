@@ -24,17 +24,16 @@ const TimelineEntry: FC<TimelineEntryProps> = ({ entry, isLeft }) => {
               <div className="mb-2 text-xl font-bold">
                 <h3>{entry.title}</h3>
               </div>
-              <div className="mb-2 text-lg font-bold">
-                {entry.startYear}
-                {entry.startMonth ? ` ${entry.startMonth}` : ""} -{" "}
-                {entry.endYear}
-                {entry.endMonth ? ` ${entry.endMonth}` : ""}
-              </div>
               {entry.subtitle && (
                 <div className="mb-2 text-base font-medium">
                   <h5>{entry.subtitle}</h5>
                 </div>
               )}
+              <div className="mb-2 text-lg font-bold">
+                {entry.startMonth ? ` ${entry.startMonth}` : ""}{" "}
+                {entry.startYear} - {entry.endMonth ? ` ${entry.endMonth}` : ""}{" "}
+                {entry.endYear}
+              </div>
               <div className="text-base leading-tight font-normal whitespace-pre-line opacity-95">
                 <p>{entry.description}</p>
               </div>
@@ -100,17 +99,16 @@ const TimelineEntry: FC<TimelineEntryProps> = ({ entry, isLeft }) => {
               <div className="mb-2 text-xl font-bold">
                 <h3>{entry.title}</h3>
               </div>
-              <div className="mb-2 text-lg font-bold">
-                {entry.startYear}
-                {entry.startMonth ? ` ${entry.startMonth}` : ""} -{" "}
-                {entry.endYear}
-                {entry.endMonth ? ` ${entry.endMonth}` : ""}
-              </div>
               {entry.subtitle && (
                 <div className="mb-2 text-base font-medium">
                   <h5>{entry.subtitle}</h5>
                 </div>
               )}
+              <div className="mb-2 text-lg font-bold">
+                {entry.startMonth ? ` ${entry.startMonth}` : ""}{" "}
+                {entry.startYear} - {entry.endMonth ? ` ${entry.endMonth}` : ""}{" "}
+                {entry.endYear}
+              </div>
               <div className="text-base leading-tight font-normal whitespace-pre-line opacity-95">
                 <p>{entry.description}</p>
               </div>
@@ -134,16 +132,15 @@ const TimelineEntry: FC<TimelineEntryProps> = ({ entry, isLeft }) => {
           <div className="mb-2 text-xl font-bold">
             <h3>{entry.title}</h3>
           </div>
-          <div className="my-auto mb-2 text-lg font-bold">
-            {entry.startYear}
-            {entry.startMonth ? ` ${entry.startMonth}` : ""} - {entry.endYear}
-            {entry.endMonth ? ` ${entry.endMonth}` : ""}
-          </div>
           {entry.subtitle && (
             <div className="mb-2 font-medium">
               <h5>{entry.subtitle}</h5>
             </div>
           )}
+          <div className="my-auto mb-2 text-lg font-bold">
+            {entry.startMonth ? ` ${entry.startMonth}` : ""} {entry.startYear} -{" "}
+            {entry.endMonth ? ` ${entry.endMonth}` : ""} {entry.endYear}
+          </div>
           <div className="text-base leading-tight font-normal opacity-95">
             <p>{entry.description}</p>
           </div>
