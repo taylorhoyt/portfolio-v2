@@ -14,7 +14,7 @@ import TimelineSection from "@/components/sections/TimelineSection";
 export default function Home() {
   return (
     <>
-      <div className="flex h-fit flex-col">
+      <div className="mb-8 flex h-fit flex-col">
         <div className="min-h-body flex w-full items-center justify-center py-4">
           <TopSection
             className={"m-auto"}
