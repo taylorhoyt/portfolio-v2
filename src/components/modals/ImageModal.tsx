@@ -47,7 +47,7 @@ const ImageModal: FC<ImageModalProps> = ({
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90">
-      <div className="absolute top-4 right-4">
+      <div className="absolute top-4 right-4 z-75">
         <BasicButton
           onClick={onClose}
           className="rounded-full p-2 text-white transition-colors hover:brightness-50"
