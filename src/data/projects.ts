@@ -68,7 +68,7 @@ export const projectConfigs: ProjectConfig[] = [
     buttons: [
       {
         type: "youtube",
-        label: "Video",
+        label: "",
         url: "https://www.youtube.com/watch?v=v86RlL8Y8OQ",
       },
       {

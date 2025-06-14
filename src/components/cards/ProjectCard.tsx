@@ -1,6 +1,12 @@
 import React, { FC, useState, useCallback } from "react";
 import Link from "next/link";
-import { ExternalLink, Github, ChevronLeft, ChevronRight } from "lucide-react";
+import {
+  ExternalLink,
+  Github,
+  ChevronLeft,
+  ChevronRight,
+  Youtube,
+} from "lucide-react";
 import BasicButton from "../buttons/BasicButton";
 import LoadingImage from "../LoadingImage";
 import ImageModal from "../modals/ImageModal";
@@ -41,13 +47,18 @@ const ProjectCard: FC<ProjectCardProps> = ({ config }: ProjectCardProps) => {
         buttonClassName =
           buttonClassName || "bg-expressive-amethyst text-white";
         buttonIcon = <ExternalLink size={24} />;
-        buttonLabel = buttonLabel || "Info";
+        buttonLabel = buttonLabel || "";
         break;
       case "github":
         buttonClassName =
           buttonClassName || "bg-dark-slate-blue text-off-white";
         buttonIcon = <Github size={24} />;
-        buttonLabel = buttonLabel || "Code";
+        buttonLabel = buttonLabel || "";
+        break;
+      case "youtube":
+        buttonClassName = buttonClassName || "bg-expressive-red text-off-white";
+        buttonIcon = <Youtube size={24} />;
+        buttonLabel = buttonLabel || "";
         break;
     }
 
