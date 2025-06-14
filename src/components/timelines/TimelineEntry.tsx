@@ -35,7 +35,7 @@ const TimelineEntry: FC<TimelineEntryProps> = ({ entry, isLeft }) => {
                 {entry.endYear}
               </div>
               <div className="text-base leading-tight font-normal whitespace-pre-line opacity-95">
-                <p>{entry.description}</p>
+                <p className="text-pretty">{entry.description}</p>
               </div>
             </div>
             {/* connector */}
@@ -110,7 +110,7 @@ const TimelineEntry: FC<TimelineEntryProps> = ({ entry, isLeft }) => {
                 {entry.endYear}
               </div>
               <div className="text-base leading-tight font-normal whitespace-pre-line opacity-95">
-                <p>{entry.description}</p>
+                <p className="text-pretty">{entry.description}</p>
               </div>
             </div>
           </>
@@ -141,8 +141,8 @@ const TimelineEntry: FC<TimelineEntryProps> = ({ entry, isLeft }) => {
             {entry.startMonth ? ` ${entry.startMonth}` : ""} {entry.startYear} -{" "}
             {entry.endMonth ? ` ${entry.endMonth}` : ""} {entry.endYear}
           </div>
-          <div className="text-base leading-tight font-normal opacity-95">
-            <p>{entry.description}</p>
+          <div className="text-base leading-tight font-normal text-pretty opacity-95">
+            <p className="text-pretty">{entry.description}</p>
           </div>
         </div>
       </div>
