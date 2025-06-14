@@ -21,7 +21,7 @@ export default function Home() {
             rightSide={() => {
               return (
                 <div className="flex h-fit w-full flex-col gap-2 rounded-xl p-4">
-                  <h1 className="text-off-white text-5xl font-bold tracking-wide">
+                  <h1 className="text-off-white text-5xl font-bold">
                     Crafting Software,
                   </h1>
                   <h1 className="text-off-white mb-2 text-5xl font-bold">
