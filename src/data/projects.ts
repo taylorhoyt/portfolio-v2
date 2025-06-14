@@ -61,11 +61,13 @@ export const projectConfigs: ProjectConfig[] = [
       "closeup.webp",
       "cloudy-charge.webp",
       "under-hood.webp",
-      "building.webp",
+      "build.webp",
+      "cad.webp",
+      "cad-drawing.webp",
     ],
     buttons: [
       {
-        type: "external",
+        type: "youtube",
         label: "Video",
         url: "https://www.youtube.com/watch?v=v86RlL8Y8OQ",
       },
