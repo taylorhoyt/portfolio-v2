@@ -24,7 +24,7 @@ export const timelineEntries: TimelineEntries = {
       endYear: 2024,
       description:
         "As a Software Engineer at Kondux, I built the entire front-end for the Persona AI Portal, handling complex UI and wallet authentication, and developed the Disclosure Collection minting dApp, which generated approximately $200,000 in revenue. I also unified multiple web3 products into a single, modular platform, streamlining development. A key achievement was delivering a real-time 3D asset delivery proof-of-concept under tight deadlines, strengthening our partnership with NVIDIA.",
-      color: "#3D99B0",
+      color: "#266676",
     },
     {
       id: "3",
