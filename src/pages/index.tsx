@@ -7,6 +7,9 @@ import BasicButton from "@/components/buttons/BasicButton";
 import LoadingImage from "@/components/LoadingImage";
 import Link from "next/link";
 import { projectConfigs } from "@/data/projects";
+import { timelineEntries } from "@/data/timeline-entries";
+import Timeline from "@/components/timelines/Timeline";
+import TimelineSection from "@/components/sections/TimelineSection";
 
 export default function Home() {
   return (
@@ -111,6 +114,10 @@ export default function Home() {
             ))}
           </ProjectSection>
         </div>
+
+        <TimelineSection>
+          <Timeline timelineEntries={timelineEntries} />
+        </TimelineSection>
       </div>
     </>
   );
