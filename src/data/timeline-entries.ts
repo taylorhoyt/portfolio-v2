@@ -14,7 +14,7 @@ export const timelineEntries: TimelineEntries = {
     {
       id: "2",
       title: "University of Arkansas",
-      subtitle: "Bachelor of Science in Computer Science",
+      subtitle: "Bachelors of Science in Computer Science",
       startYear: 2022,
       endYear: 2024,
       description: "",
