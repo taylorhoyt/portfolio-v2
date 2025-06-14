@@ -20,19 +20,17 @@ export default function Home() {
             className={"m-auto"}
             rightSide={() => {
               return (
-                <div className="flex h-fit w-full flex-col rounded-xl p-4">
-                  <h1 className="text-off-white text-3xl font-bold">
-                    Many things will be built
+                <div className="flex h-fit w-full flex-col gap-2 rounded-xl p-4">
+                  <h1 className="text-off-white text-5xl font-bold tracking-wide">
+                    Crafting Software,
                   </h1>
-                  <h1 className="text-expressive-blue text-4xl font-bold">
-                    in a real timeframe
-                  </h1>
-                  <h1 className="text-off-white text-3xl font-bold">
-                    Maybe even soon
+                  <h1 className="text-off-white mb-2 text-5xl font-bold">
+                    Delivering Impact.
                   </h1>
                   <h3 className="text-light-gray text-wrap">
-                    Fullstack software engineer experienced in turning dreams
-                    into reality
+                    Fullstack software engineer who thrives on transforming
+                    complex challenges into elegant, efficient, and user-centric
+                    applications that make a real difference.
                   </h3>
                 </div>
               );
