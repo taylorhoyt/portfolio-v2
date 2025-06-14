@@ -66,8 +66,18 @@ export const projectConfigs: ProjectConfig[] = [
     buttons: [
       {
         type: "external",
-        label: "See images 11-19",
-        url: "https://empactsstudentprojects.wordpress.com/introduction-to-engineering/",
+        label: "Video",
+        url: "https://www.youtube.com/watch?v=v86RlL8Y8OQ",
+      },
+      {
+        type: "external",
+        label: "Presentation",
+        url: "https://empactsstudentprojects.wordpress.com/wp-content/uploads/2022/08/solar-lawnmower-project-taylor-hoyta-2.pdf",
+      },
+      {
+        type: "external",
+        label: "Design Doc",
+        url: "https://empactsstudentprojects.wordpress.com/wp-content/uploads/2022/08/solar_lawnmower_design_document.pdf",
       },
     ],
   },
