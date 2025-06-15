@@ -10,7 +10,11 @@ interface SideMenuProps {
 const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
   const menuItems = [
     { icon: <Home size={24} />, label: "Home", href: "/#home" },
-    { icon: <User size={24} />, label: "About", href: "/#timeline" },
+    {
+      icon: <User size={24} />,
+      label: "Professional Timeline",
+      href: "/#timeline",
+    },
     { icon: <Briefcase size={24} />, label: "Projects", href: "/#projects" },
     {
       icon: <FileText size={24} />,
