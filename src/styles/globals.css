@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -6,7 +6,7 @@
   --site-color-secondary-background: #BDC3C7;
   --site-color-primary-text: #333333;
   --site-color-secondary-text: #6B7280;
-  --site-font-family: 'Oxygen', sans-serif;
+  --site-font-family: 'Lato', sans-serif;
 
   --site-color-primary: #85C1E9;
   --site-color-secondary: #5D6D7E;
