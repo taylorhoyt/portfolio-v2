@@ -22,10 +22,10 @@ export default function Home() {
               return (
                 <div className="flex h-fit w-full flex-col gap-2 rounded-xl p-4">
                   <h1 className="text-off-white text-5xl font-bold">
-                    Crafting Software,
+                    Quality code,
                   </h1>
                   <h1 className="text-off-white mb-2 text-5xl font-bold">
-                    Delivering Impact.
+                    Accelerated results.
                   </h1>
                   <h3 className="text-light-gray text-wrap">
                     Fullstack software engineer who thrives on transforming
