@@ -20,14 +20,14 @@ export const projectConfigs: ProjectConfig[] = [
     imageFiles: ["chat.webp", "edit-chat-history.webp", "select-avatar.webp"],
     buttons: [
       {
-        type: "external",
-        label: "Live",
-        url: "https://dapp.kondux.io/ai-portal",
-      },
-      {
         type: "youtube",
         label: "",
         url: "https://youtu.be/AxoxBu4IUzU",
+      },
+      {
+        type: "external",
+        label: "Live",
+        url: "https://dapp.kondux.io/ai-portal",
       },
     ],
   },
