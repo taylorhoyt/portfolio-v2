@@ -1,6 +1,6 @@
 # Taylor Hoyt - Portfolio
 
-**⚠️ NOTICE: This portfolio site is currently under construction. You can view the live preview at [preview.taylorhoyt.com](https://preview.taylorhoyt.com)**
+**View this site at [taylorhoyt.com](https://taylorhoyt.com)**
 
 ## About
 
