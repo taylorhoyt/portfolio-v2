@@ -24,6 +24,11 @@ export const projectConfigs: ProjectConfig[] = [
         label: "Live",
         url: "https://dapp.kondux.io/ai-portal",
       },
+      {
+        type: "youtube",
+        label: "",
+        url: "https://youtu.be/AxoxBu4IUzU",
+      },
     ],
   },
   {
@@ -34,15 +39,7 @@ export const projectConfigs: ProjectConfig[] = [
       "companion app to allow users to login and " +
       "securely access monitoring data.",
     imagesFolder: "/project-images/mcms",
-    imageFiles: [
-      "1.webp",
-      "2.webp",
-      "3.webp",
-      "4.webp",
-      "5.webp",
-      "6.webp",
-      "7.webp",
-    ],
+    imageFiles: ["1.webp", "2.webp", "4.webp", "5.webp", "6.webp", "7.webp"],
     buttons: [
       {
         type: "external",
