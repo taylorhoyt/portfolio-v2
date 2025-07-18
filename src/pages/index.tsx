@@ -10,11 +10,13 @@ import { projectConfigs } from "@/data/projects";
 import { timelineEntries } from "@/data/timeline-entries";
 import Timeline from "@/components/timelines/Timeline";
 import TimelineSection from "@/components/sections/TimelineSection";
+import ContactForm from "@/components/forms/ContactForm";
+import ContactSection from "@/components/sections/ContactSection";
 
 export default function Home() {
   return (
     <>
-      <div className="mb-8 flex h-fit flex-col">
+      <div className="flex h-fit flex-col">
         <div className="min-h-body flex w-full items-center justify-center py-4">
           <TopSection
             className={"m-auto"}
@@ -116,6 +118,12 @@ export default function Home() {
         <TimelineSection>
           <Timeline timelineEntries={timelineEntries} />
         </TimelineSection>
+
+        <div className="min-h-body from-from-gradient to-to-gradient via-via-gradient flex h-fit w-full items-center justify-center bg-gradient-to-t">
+          <ContactSection>
+            <ContactForm />
+          </ContactSection>
+        </div>
       </div>
     </>
   );
