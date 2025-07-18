@@ -17,7 +17,7 @@ const Timeline: FC<TimelineProps> = ({ timelineEntries }: TimelineProps) => {
   }, [timelineEntries]);
 
   return (
-    <div className="flex min-h-screen w-full justify-center py-10">
+    <div className="flex w-full justify-center py-10">
       <div
         ref={containerRef}
         className="relative flex w-full max-w-4xl flex-col items-center"
