@@ -54,7 +54,7 @@ export default function handler(
         };
 
         // TODO: call API that will send the message to me
-        res.status(200).json(requestObject);
+        res.status(200).json({ message: requestObject.message });
       }
     } else {
       res.status(400).json({ message: "Malformed request" });

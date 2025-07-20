@@ -15,8 +15,28 @@ const ContactForm = () => {
   } = useForm<ContactRequest>();
 
   const onSubmit = async (data: ContactRequest) => {
-    console.log(data);
-    // TODO: send data to /api/contact onSubmit
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(
+          errorData.message || "An error occurred while sending message",
+        );
+      }
+
+      const responseData = await response.json();
+      alert(responseData.message);
+    } catch (err) {
+      // TODO: handle gracefully
+      console.log(err);
+    }
   };
 
   return (
