@@ -119,7 +119,7 @@ export default function Home() {
           <Timeline timelineEntries={timelineEntries} />
         </TimelineSection>
 
-        <div className="min-h-body from-from-gradient to-to-gradient via-via-gradient flex h-fit w-full items-center justify-center bg-gradient-to-t">
+        <div className="min-h-body from-from-gradient to-to-gradient via-via-gradient flex h-fit w-full items-center justify-center bg-gradient-to-t p-2">
           <ContactSection>
             <ContactForm />
           </ContactSection>

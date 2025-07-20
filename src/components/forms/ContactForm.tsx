@@ -21,7 +21,7 @@ const ContactForm = () => {
 
   return (
     <form onSubmit={handleSubmit((data) => onSubmit(data))}>
-      <div className="bg-primary-background text-secondary-text flex flex-col gap-0.5 rounded-lg p-6">
+      <div className="bg-primary-background text-secondary-text m-auto flex max-w-[80vw] flex-col gap-0.5 rounded-lg p-6">
         <div className="flex flex-row gap-2">
           <div className="flex flex-col">
             <label htmlFor="firstName" className="pb-0.5 pl-1">
@@ -36,7 +36,7 @@ const ContactForm = () => {
               })}
               aria-invalid={errors.firstName ? "true" : "false"}
               placeholder="Gavin"
-              className="border-primary-border rounded-lg border-2 p-2"
+              className="border-primary-border w-full rounded-lg border-2 p-2"
             />
             {errors.firstName?.type === "pattern" ? (
               <small className="text-expressive-red">
@@ -67,7 +67,7 @@ const ContactForm = () => {
               })}
               aria-invalid={errors.lastName ? "true" : "false"}
               placeholder="Belson"
-              className="border-primary-border rounded-lg border-2 p-2"
+              className="border-primary-border w-full rounded-lg border-2 p-2"
             />
             {errors.lastName?.type === "pattern" ? (
               <small className="text-expressive-red">
@@ -86,14 +86,13 @@ const ContactForm = () => {
             )}
           </div>
         </div>
-        <div className="flex flex-row gap-2">
+        <div className="flex flex-col sm:flex-row sm:gap-2">
           <div className="flex flex-col">
             <label htmlFor="phoneNumber" className="pb-0.5 pl-1">
               Phone number (US only)
             </label>
             <input
               id="phoneNumber"
-              type="tel"
               {...register("phoneNumber", {
                 required: true,
                 pattern: PHONE_NUMBER_REGEX,
@@ -120,7 +119,6 @@ const ContactForm = () => {
             </label>
             <input
               id="email"
-              type="email"
               {...register("email", {
                 required: true,
                 pattern: EMAIL_REGEX,

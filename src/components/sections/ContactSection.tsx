@@ -11,7 +11,7 @@ const ContactSection: FC<ProjectSectionProps> = ({
 }: ProjectSectionProps) => {
   return (
     <section id="contact">
-      <div className="flex flex-row justify-center py-12">
+      <div className="flex max-w-[80vw] flex-row justify-center pt-8 pb-6">
         <h1 className="text-primary-text text-center text-6xl font-bold">
           Contact Me!
         </h1>
