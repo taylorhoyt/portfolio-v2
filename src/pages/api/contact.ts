@@ -1,27 +1,26 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { ContactRequest } from "@/types/contact";
+import {
+  EMAIL_REGEX,
+  NON_DIGIT_REGEX,
+  PHONE_NUMBER_REGEX,
+} from "@/util/patterns";
 
 type ResponseData = {
   message: string;
 };
 
 function validateEmail(email: string): boolean {
-  // email validation is not perfect, but we can get close. Check out this reddit thread
-  // and associated video for more info: https://www.reddit.com/r/programming/comments/1kubafk/so_you_think_you_can_validate_email_addresses_a/
-  // TLDR - at best we can check that it isn't empty and includes an @, but the only true way to verify is to send a verification email.
-  return email !== "" && email.includes("@");
+  return EMAIL_REGEX.test(email);
 }
 
 function validatePhoneNumberFormat(phoneNumber: string): boolean {
   // this regex validates US phone numbers only
-  // TODO: add support for international numbers - perhaps add a dropdown menu for international extension?
-  const pattern: RegExp = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
-
-  return pattern.test(phoneNumber);
+  return PHONE_NUMBER_REGEX.test(phoneNumber);
 }
 
 function sanitizePhoneNumber(phoneNumber: string): string {
-  return phoneNumber.replace(/\D/g, "");
+  return phoneNumber.replace(NON_DIGIT_REGEX, "");
 }
 
 export default function handler(
