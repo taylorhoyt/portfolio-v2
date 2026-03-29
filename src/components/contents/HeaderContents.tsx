@@ -21,6 +21,7 @@ const HeaderContents = () => {
         <div className="my-auto hidden w-full justify-between gap-6 lg:flex">
           {menuItems.map((menuItem) => (
             <Link
+              key={menuItem.label}
               href={menuItem.href}
               className="hover:text-expressive-blue text-sm tracking-tight underline-offset-4 hover:underline"
             >

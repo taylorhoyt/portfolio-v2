@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import { Home, User, Briefcase, FileText } from "lucide-react";
 import { MenuItem } from "@/types/menu";
 import { menuItems } from "../../data/menu-items";
 
