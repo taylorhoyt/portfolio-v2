@@ -2,13 +2,14 @@ import React from "react";
 import ThemeToggleButton from "../buttons/ThemeToggleButton";
 import MenuButton from "@/components/buttons/MenuButton";
 import Link from "next/link";
+import { menuItems } from "@/data/menu-items";
 
 const HeaderContents = () => {
   return (
     <>
       <div className="flex h-full gap-4">
         <div className="my-auto flex h-fit">
-          <MenuButton />
+          <MenuButton menuItems={menuItems} />
         </div>
         <div className="my-auto flex h-fit">
           <Link href="/" rel="noopener noreferrer">

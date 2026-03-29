@@ -1,13 +1,18 @@
 import React from "react";
 import Link from "next/link";
 import { Home, User, Briefcase, FileText } from "lucide-react";
+import { MenuItem } from "@/types/menu";
 
 interface SideMenuProps {
   isOpen: boolean;
   onClose: () => void;
+  menuItems: MenuItem[];
 }
 
-const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
+const SideMenu: React.FC<SideMenuProps> = ({
+  isOpen,
+  onClose,
+}: SideMenuProps) => {
   const menuItems = [
     { icon: <Home size={24} />, label: "Home", href: "/#home" },
     {
