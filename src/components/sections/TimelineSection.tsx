@@ -12,9 +12,9 @@ const TimelineSection: FC<TimelineSectionProps> = ({
   return (
     <section id="timeline">
       <div className="flex flex-row justify-center py-12">
-        <h1 className="text-primary-text text-center text-6xl font-bold">
+        <h2 className="text-primary-text text-center text-6xl font-bold">
           Career Timeline
-        </h1>
+        </h2>
       </div>
       <div
         className={`from-from-gradient to-to-gradient via-via-gradient mx-auto flex w-[1000px] max-w-[90vw] rounded-xl bg-linear-to-b p-2 shadow ${className}`}

@@ -10,6 +10,8 @@ import { projectConfigs } from "@/data/projects";
 import { timelineEntries } from "@/data/timeline-entries";
 import Timeline from "@/components/timelines/Timeline";
 import TimelineSection from "@/components/sections/TimelineSection";
+import SkillsSection from "@/components/sections/SkillsSection";
+import ContactSection from "@/components/sections/ContactSection";
 
 export default function Home() {
   return (
@@ -21,17 +23,16 @@ export default function Home() {
             rightSide={() => {
               return (
                 <div className="flex h-fit w-full flex-col gap-2 rounded-xl p-4">
-                  <h1 className="text-off-white text-5xl font-bold">
+                  <h1 className="text-off-white mb-2 text-5xl font-bold leading-tight">
                     Quality code,
-                  </h1>
-                  <h1 className="text-off-white mb-2 text-5xl font-bold">
+                    <br />
                     Accelerated results.
                   </h1>
-                  <h3 className="text-light-gray text-wrap">
+                  <p className="text-light-gray text-wrap">
                     Fullstack software engineer who thrives on transforming
                     complex challenges into elegant, efficient, and user-centric
                     applications that make a real difference.
-                  </h3>
+                  </p>
                 </div>
               );
             }}
@@ -43,7 +44,7 @@ export default function Home() {
                     width={2585}
                     height={2585}
                     className="rounded-full p-6"
-                    alt="me"
+                    alt="Taylor Hoyt, Fullstack Software Engineer"
                   />
                 </div>
               );
@@ -55,10 +56,12 @@ export default function Home() {
                     href={"/resume/resume.pdf"}
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="View Resume"
                   >
                     <BasicButton
                       className="bg-expressive-red text-off-white"
                       tooltipLabel="View my resume"
+                      aria-label="View Resume"
                     >
                       <FileText size={24} />
                     </BasicButton>
@@ -67,10 +70,12 @@ export default function Home() {
                     href={"mailto:me@taylorhoyt.com"}
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="Email Me"
                   >
                     <BasicButton
                       className="bg-expressive-yellow text-off-white"
                       tooltipLabel="Email Me!"
+                      aria-label="Email Me"
                     >
                       <Mail size={24} />
                     </BasicButton>
@@ -79,10 +84,12 @@ export default function Home() {
                     href={"https://www.linkedin.com/in/taylorchoyt"}
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="Connect on LinkedIn"
                   >
                     <BasicButton
                       className="bg-expressive-blue text-off-white"
                       tooltipLabel="Connect with me!"
+                      aria-label="Connect on LinkedIn"
                     >
                       <Linkedin size={24} />
                     </BasicButton>
@@ -91,10 +98,12 @@ export default function Home() {
                     href={"https://github.com/taylorhoyt"}
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="View my GitHub"
                   >
                     <BasicButton
                       className="bg-expressive-amethyst text-off-white"
                       tooltipLabel="View my code"
+                      aria-label="View my GitHub"
                     >
                       <Github size={24} />
                     </BasicButton>
@@ -104,6 +113,8 @@ export default function Home() {
             }}
           />
         </div>
+
+        <SkillsSection />
 
         <div className="min-h-body from-from-gradient to-to-gradient via-via-gradient flex h-fit w-full items-center justify-center bg-gradient-to-t py-4">
           <ProjectSection>
@@ -116,6 +127,8 @@ export default function Home() {
         <TimelineSection>
           <Timeline timelineEntries={timelineEntries} />
         </TimelineSection>
+
+        <ContactSection />
       </div>
     </>
   );

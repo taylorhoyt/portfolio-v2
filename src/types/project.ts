@@ -12,4 +12,5 @@ export interface ProjectConfig {
   imagesFolder: string;
   imageFiles: string[];
   buttons?: ButtonConfig[];
+  techStack?: string[];
 }

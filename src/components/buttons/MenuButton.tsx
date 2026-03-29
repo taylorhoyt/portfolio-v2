@@ -11,10 +11,17 @@ const MenuButton: React.FC = () => {
       <BasicButton
         onClick={() => setIsOpen(!isOpen)}
         className="text-primary-text bg-transparent"
+        aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+        aria-expanded={isOpen}
+        aria-controls="mobile-nav-menu"
       >
         {isOpen ? <X size={28} /> : <Menu size={28} />}
       </BasicButton>
-      <SideMenu isOpen={isOpen} onClose={() => setIsOpen(false)} />
+      <SideMenu
+        id="mobile-nav-menu"
+        isOpen={isOpen}
+        onClose={() => setIsOpen(false)}
+      />
     </>
   );
 };

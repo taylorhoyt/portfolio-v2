@@ -18,6 +18,7 @@ export const projectConfigs: ProjectConfig[] = [
       "including persona selection, wallet authentication flow, AI integration, and dynamic chat interfaces",
     imagesFolder: "/project-images/portal",
     imageFiles: ["chat.webp", "edit-chat-history.webp", "select-avatar.webp"],
+    techStack: ["Next.js", "Tailwind CSS", "TypeScript", "Web3", "AI"],
     buttons: [
       {
         type: "youtube",
@@ -40,6 +41,7 @@ export const projectConfigs: ProjectConfig[] = [
       "securely access monitoring data.",
     imagesFolder: "/project-images/mcms",
     imageFiles: ["1.webp", "2.webp", "4.webp", "5.webp", "6.webp", "7.webp"],
+    techStack: ["React", "Node.js", "PostgreSQL", "BLE / IoT"],
     buttons: [
       {
         type: "external",
@@ -53,6 +55,7 @@ export const projectConfigs: ProjectConfig[] = [
     description:
       "Collaborated with 3 colleagues to design and build a solar-powered, emission-free lawn mower over the course of four months.",
     imagesFolder: "/project-images/splm",
+    techStack: ["Hardware", "Electrical Engineering", "CAD"],
     imageFiles: [
       "complete.webp",
       "closeup.webp",

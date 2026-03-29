@@ -134,6 +134,19 @@ const ProjectCard: FC<ProjectCardProps> = ({ config }: ProjectCardProps) => {
           </h3>
           <p className="text-secondary-text mb-4">{config.description}</p>
 
+          {config.techStack && config.techStack.length > 0 && (
+            <div className="mb-4 flex flex-wrap gap-2">
+              {config.techStack.map((tech) => (
+                <span
+                  key={tech}
+                  className="bg-secondary-background text-primary-text rounded-full px-3 py-1 text-xs font-medium"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+          )}
+
           {config.buttons && config.buttons.length > 0 && (
             <div className="flex flex-wrap gap-4">
               {config.buttons.map((button, index) => {

@@ -14,7 +14,10 @@ const TimelineEntry: FC<TimelineEntryProps> = ({ entry, isLeft }) => {
       className={`z-10 mb-12 flex w-full ${isLeft ? "md:justify-start" : "md:justify-end"} relative justify-center`}
     >
       {/* Desktop */}
-      <div className="relative hidden w-1/2 items-center md:flex">
+      <div
+        className="relative hidden w-1/2 items-center md:flex"
+        aria-hidden="true"
+      >
         {isLeft && (
           <>
             <div
@@ -26,7 +29,7 @@ const TimelineEntry: FC<TimelineEntryProps> = ({ entry, isLeft }) => {
               </div>
               {entry.subtitle && (
                 <div className="mb-2 text-base font-medium">
-                  <h5>{entry.subtitle}</h5>
+                  <h4>{entry.subtitle}</h4>
                 </div>
               )}
               <div className="mb-2 text-lg font-bold">
@@ -101,7 +104,7 @@ const TimelineEntry: FC<TimelineEntryProps> = ({ entry, isLeft }) => {
               </div>
               {entry.subtitle && (
                 <div className="mb-2 text-base font-medium">
-                  <h5>{entry.subtitle}</h5>
+                  <h4>{entry.subtitle}</h4>
                 </div>
               )}
               <div className="mb-2 text-lg font-bold">
@@ -134,7 +137,7 @@ const TimelineEntry: FC<TimelineEntryProps> = ({ entry, isLeft }) => {
           </div>
           {entry.subtitle && (
             <div className="mb-2 font-medium">
-              <h5>{entry.subtitle}</h5>
+              <h4>{entry.subtitle}</h4>
             </div>
           )}
           <div className="my-auto mb-2 text-lg font-bold">

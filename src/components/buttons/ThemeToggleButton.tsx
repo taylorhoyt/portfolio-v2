@@ -10,6 +10,9 @@ const ThemeToggleButton: React.FC = () => {
     <BasicButton
       onClick={toggleTheme}
       className="text-primary-text bg-transparent"
+      aria-label={
+        theme === "light" ? "Switch to dark mode" : "Switch to light mode"
+      }
     >
       {theme === "light" ? <Moon size={28} /> : <Sun size={28} />}
     </BasicButton>
