@@ -132,7 +132,9 @@ const ProjectCard: FC<ProjectCardProps> = ({ config }: ProjectCardProps) => {
           <h3 className="text-primary-text mb-2 text-2xl font-bold">
             {config.title}
           </h3>
-          <p className="text-secondary-text mb-4">{config.description}</p>
+          <p className="text-secondary-text mb-4 tracking-tight">
+            {config.description}
+          </p>
 
           {config.buttons && config.buttons.length > 0 && (
             <div className="flex flex-wrap gap-4">

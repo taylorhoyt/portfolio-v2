@@ -17,7 +17,7 @@ const TimelineSection: FC<TimelineSectionProps> = ({
         </h1>
       </div>
       <div
-        className={`from-from-gradient to-to-gradient via-via-gradient mx-auto flex w-[1000px] max-w-[90vw] rounded-xl bg-linear-to-b p-2 shadow ${className}`}
+        className={`from-from-gradient to-to-gradient via-via-gradient mx-auto flex w-250 max-w-[90vw] rounded-xl bg-linear-to-b p-2 shadow ${className}`}
       >
         {children}
       </div>

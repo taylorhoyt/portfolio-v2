@@ -105,7 +105,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="min-h-body from-from-gradient to-to-gradient via-via-gradient flex h-fit w-full items-center justify-center bg-gradient-to-t py-4">
+        <div className="min-h-body from-from-gradient to-to-gradient via-via-gradient flex h-fit w-full items-center justify-center bg-linear-to-t py-4">
           <ProjectSection>
             {projectConfigs.map((config, index) => (
               <ProjectCard key={index} config={config} />
