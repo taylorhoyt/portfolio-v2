@@ -15,7 +15,10 @@ export default function Home() {
   return (
     <>
       <div className="mb-8 flex h-fit flex-col">
-        <div className="min-h-body flex w-full items-center justify-center py-4">
+        <div
+          className="min-h-body flex w-full items-center justify-center py-4"
+          id={"home"}
+        >
           <TopSection
             className={"m-auto"}
             rightSide={() => {
