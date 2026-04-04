@@ -2,8 +2,15 @@ import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import BasicButton from "./BasicButton";
 import SideMenu from "../menus/SideMenu";
+import { MenuItem } from "@/types/menu";
 
-const MenuButton: React.FC = () => {
+interface MenuButtonProps {
+  menuItems: MenuItem[];
+}
+
+const MenuButton: React.FC<MenuButtonProps> = ({
+  menuItems,
+}: MenuButtonProps) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
@@ -14,7 +21,11 @@ const MenuButton: React.FC = () => {
       >
         {isOpen ? <X size={28} /> : <Menu size={28} />}
       </BasicButton>
-      <SideMenu isOpen={isOpen} onClose={() => setIsOpen(false)} />
+      <SideMenu
+        isOpen={isOpen}
+        onClose={() => setIsOpen(false)}
+        menuItems={menuItems}
+      />
     </>
   );
 };

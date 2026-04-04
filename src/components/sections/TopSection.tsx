@@ -14,9 +14,9 @@ const TopSection: FC<HeroSectionProps> = ({
   className = "",
 }: HeroSectionProps) => {
   return (
-    <section className={"h-full w-full"} id={"home"}>
+    <section className="h-full w-full">
       <div
-        className={`grid h-fit w-[1200px] max-w-[90vw] grid-cols-1 gap-4 lg:grid-cols-5 ${className}`}
+        className={`grid h-fit max-w-[85vw] grid-cols-1 gap-4 lg:grid-cols-5 ${className}`}
       >
         <div className="bg-primary flex h-full w-full flex-col rounded-xl lg:col-span-3">
           <div

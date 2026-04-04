@@ -15,19 +15,22 @@ export default function Home() {
   return (
     <>
       <div className="mb-8 flex h-fit flex-col">
-        <div className="min-h-body flex w-full items-center justify-center py-4">
+        <div
+          className="min-h-body flex w-full items-center justify-center py-4"
+          id={"home"}
+        >
           <TopSection
             className={"m-auto"}
             rightSide={() => {
               return (
-                <div className="flex h-fit w-full flex-col gap-2 rounded-xl p-4">
+                <div className="flex h-fit w-full flex-col gap-2 rounded-xl p-8">
                   <h1 className="text-off-white text-5xl font-bold">
                     Quality code,
                   </h1>
                   <h1 className="text-off-white mb-2 text-5xl font-bold">
                     Accelerated results.
                   </h1>
-                  <h3 className="text-light-gray text-wrap">
+                  <h3 className="text-light-gray text-xl text-wrap">
                     Fullstack software engineer who thrives on transforming
                     complex challenges into elegant, efficient, and user-centric
                     applications that make a real difference.
@@ -105,7 +108,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="min-h-body from-from-gradient to-to-gradient via-via-gradient flex h-fit w-full items-center justify-center bg-gradient-to-t py-4">
+        <div className="min-h-body from-from-gradient to-to-gradient via-via-gradient flex h-fit w-full items-center justify-center bg-linear-to-t py-4">
           <ProjectSection>
             {projectConfigs.map((config, index) => (
               <ProjectCard key={index} config={config} />

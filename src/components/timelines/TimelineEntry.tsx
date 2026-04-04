@@ -18,7 +18,7 @@ const TimelineEntry: FC<TimelineEntryProps> = ({ entry, isLeft }) => {
         {isLeft && (
           <>
             <div
-              className="z-20 max-w-[340px] min-w-[280px] rounded-xl px-8 py-6 font-medium text-white shadow-lg"
+              className="z-20 max-w-85 min-w-70 rounded-xl px-8 py-6 font-medium text-white shadow-lg"
               style={{ background: entry.color }}
             >
               <div className="mb-2 text-xl font-bold">
@@ -93,7 +93,7 @@ const TimelineEntry: FC<TimelineEntryProps> = ({ entry, isLeft }) => {
               </div>
             </div>
             <div
-              className="z-20 max-w-[340px] min-w-[280px] rounded-xl px-8 py-6 font-medium text-white shadow-lg"
+              className="z-20 max-w-85 min-w-70 rounded-xl px-8 py-6 font-medium text-white shadow-lg"
               style={{ background: entry.color }}
             >
               <div className="mb-2 text-xl font-bold">
@@ -110,7 +110,9 @@ const TimelineEntry: FC<TimelineEntryProps> = ({ entry, isLeft }) => {
                 {entry.endYear}
               </div>
               <div className="text-base leading-tight font-normal whitespace-pre-line opacity-95">
-                <p className="text-pretty">{entry.description}</p>
+                <p className="tracking-tight text-pretty">
+                  {entry.description}
+                </p>
               </div>
             </div>
           </>
@@ -142,7 +144,7 @@ const TimelineEntry: FC<TimelineEntryProps> = ({ entry, isLeft }) => {
             {entry.endMonth ? ` ${entry.endMonth}` : ""} {entry.endYear}
           </div>
           <div className="text-base leading-tight font-normal text-pretty opacity-95">
-            <p className="text-pretty">{entry.description}</p>
+            <p className="tracking-tight text-pretty">{entry.description}</p>
           </div>
         </div>
       </div>

@@ -13,9 +13,7 @@ const ResumeSection: FC<ResumeSectionProps> = ({
 
   useEffect(() => {
     if (!hasOpenedPdf.current) {
-      // Open PDF in new tab when component mounts
       window.open("/resume/Resume-2025.pdf", "_blank");
-      // Redirect to home page
       router.push("/");
       hasOpenedPdf.current = true;
     }

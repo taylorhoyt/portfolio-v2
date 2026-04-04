@@ -17,7 +17,7 @@ const ProjectSection: FC<ProjectSectionProps> = ({
         </h1>
       </div>
       <div
-        className={`grid h-fit w-[1200px] max-w-[90vw] grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 ${className}`}
+        className={`grid h-fit w-300 max-w-[90vw] grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 ${className}`}
       >
         {children}
       </div>
