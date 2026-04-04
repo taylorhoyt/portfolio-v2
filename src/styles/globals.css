@@ -92,11 +92,16 @@
   --color-dark-slate-blue: #2c3a47;
   --color-light-gray: #ecf0f1;
   --color-silver-gray: #bdc3c7;
+
+  --breakpoint-3xl: 1920px;
+  --breakpoint-4xl: 2560px;
+  --breakpoint-5xl: 3840px;
 }
 
 @layer base {
   html {
     font-family: var(--site-font-family);
+    @apply 3xl:text-4xl 4xl:text-5xl 5xl:text-6xl 2xl:text-3xl;
   }
 
   ::-webkit-scrollbar {

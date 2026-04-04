@@ -20,14 +20,14 @@ export default function Home() {
             className={"m-auto"}
             rightSide={() => {
               return (
-                <div className="flex h-fit w-full flex-col gap-2 rounded-xl p-4">
+                <div className="flex h-fit w-full flex-col gap-2 rounded-xl p-8">
                   <h1 className="text-off-white text-5xl font-bold">
                     Quality code,
                   </h1>
                   <h1 className="text-off-white mb-2 text-5xl font-bold">
                     Accelerated results.
                   </h1>
-                  <h3 className="text-light-gray text-wrap">
+                  <h3 className="text-light-gray text-xl text-wrap">
                     Fullstack software engineer who thrives on transforming
                     complex challenges into elegant, efficient, and user-centric
                     applications that make a real difference.
